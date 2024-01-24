@@ -1,0 +1,97 @@
+.body_white{
+    background: #e6e6f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.login_header{
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.login_body{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_body .lbody_image img{
+    object-fit: contain;
+}
+.widjet_bottom{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    width: 90%;
+    transform: translate( -50%);
+    margin: 0 auto;
+}
+.widjet_bottom .login_form{
+    background-color: #ffff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.login_form .title_login p{
+    font-size: 20px;
+    font-weight:800 !important;
+    font-family: 'Avenir LT Std';
+}
+.title_login_type{
+    font-weight:800 !important;
+    font-family: 'Avenir LT Std';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .title_login_type.active{
+    color: #FC4B6F;
+    border-bottom: 3px solid #FC4B6F;
+} */
+.title_type {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid black;
+}
+.title_type.active{
+    color: #FC4B6F;
+    border-bottom: 3px solid #FC4B6F;
+}
+.input_login{
+    padding: 30px !important;
+    border-radius: 12px !important;
+}
+.btn_login{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.bntSinging{
+    font-family: 'Avenir LT Std';
+    border: none !important;
+    background-color: #FC4B6F !important;
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    padding: 10px;
+}
+.title_detail_login{
+
+}
+.login_form .title_detail_login p{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight:700 !important;
+    font-family: 'Avenir LT Std';
+    text-align: center;
+}
+.end_login_detail{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight:700 !important;
+    font-family: 'Avenir LT Std';
+    text-align: center;
+}
