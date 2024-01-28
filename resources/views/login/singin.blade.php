@@ -43,7 +43,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="btn_login">
-                                    <button class="btn btn-info bntSinging">Get Verification Cod</button>
+                                    <button class="btn btn-info bntSinging">Get Verification Code</button>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                         <p>Sign In with Email</p>
                     </div>
                     <div class="end_login_detail">
-                        By Signing in you Agree to Our Terms & Conditions and Privacy Policy
+                        By Signing in you Agree to Our <span class=""  style="color: var(--is_main_color);">Terms & Conditions</span> and <span style="color: var(--is_main_color);">Privacy Policy</span>
                     </div>
                 </div>
             </div>
