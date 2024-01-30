@@ -59,6 +59,7 @@
                         <span class="heaer_title_right">Popular Categories</span>
                         <span class="heaer_title_left active">SEE ALL <i class="fa-solid fa-chevron-right"></i></span>
                     </div>
+                    
                     <div class="row no-gutters">
                         @foreach ($arrCate as $key => $value)
                             <div class="col-4 p-1">
@@ -253,30 +254,7 @@
 
     </div>
 
-    <div class="row">
-        <div class="nav_footer">
-            <div class="footer_item active">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </div>
-            <div class="footer_item">
-                <i class="fa-solid fa-layer-group"></i>
-                <span>Order</span>
-            </div>
-            <div class="footer_item">
-                <i class="fa-solid fa-credit-card"></i>
-                <span>Payment</span>
-            </div>
-            <div class="footer_item">
-                <i class="fa-solid fa-envelopes-bulk"></i>
-                <span>Offer</span>
-            </div>
-            <div class="footer_item">
-                <i class="fa-solid fa-id-badge"></i>
-                <span>Profile</span>
-            </div>
-        </div>
-    </div>
+  @include('layouts.app_footer')
 @endsection
 
 @section('script')
