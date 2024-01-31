@@ -58,6 +58,7 @@
                    
                 </div>
                 <div class="row  p-1">
+                    @for ($i = 0; $i < 10; $i++)
                      <div class="col-6">
                         <div class="product_box">
                             <div class="block_image">
@@ -66,16 +67,20 @@
                                 </div>
                             </div>
                             <div class="block_title">
-                                <div class="is_desc1" style="color: #617C9D">Night Dinner</div>
-                                <div class="is_desc2">Comp Silver Brand</div>
+                                <div class="is_desc2">Coca Cola</div>
+                                <div class="sub_des">
+                                    <span class="sub_des_min">24min</span>
+                                    <span class="sub_des_rate">  <i class="fa-solid fa-star"></i> 3.5</span>
+                                </div>
+                                <span class="sub_total"  style="font-size: 14px;margin-left:15px;color:#FC4B6F">$180</span> <span class="before_price" style="font-size: 11px"> $360
+
+                                <div class="is_add_tocard">
+                                   <span style="margin-top: -5px">+</span>  
+                                </div>
                             </div>
                         </div>
                      </div>
-                     <div class="col-6">
-                        <div class="product_box">
-                            
-                        </div>
-                     </div>
+                     @endfor
                 </div>
             </div>
         </div>

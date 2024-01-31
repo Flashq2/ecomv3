@@ -380,6 +380,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* background-color: blue; */
     border-radius: 10px;
     padding: 10px;
+
 }
 .detail_item_title  .item_main_title{
     font-size: 16px;
@@ -575,7 +576,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 200px;
     background-color: #ffff;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: hidden !important;
+    position: relative;
+    margin-bottom: 15px;
 }
 .cate_slide{
     padding: 5px;
@@ -610,6 +613,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height:90px;
     border-radius: 50%;
     overflow: hidden;
+    border: 1px solid #A5BECC;
 }
 .block_image .block_control_img_style img{
     width: 100%;
@@ -620,14 +624,35 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 100%;    
     height: 50%;
     padding: 5px;
+    overflow: hidden !important;
 }
-.is_desc1{
+.sub_des{
     width: 100%;
-    font-size: 14px;
+    font-size: 11px;
+    color: #617C9D;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
 }
 .is_desc2{
     width: 100%;
     color: #161531;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 800;
+    text-align: center;
 }
+.is_add_tocard{
+    position: absolute;
+    width: 37px;
+    height: 30px;
+    bottom: 0;
+    right: 0px;
+    background-color: var(--is_main_color);
+    border-radius: 10px 0 10px 0;text-align: center;text-emphasis: none;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
