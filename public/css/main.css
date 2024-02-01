@@ -255,6 +255,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* height: 200px; */
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 .box_list .box_header{
     display: flex;
@@ -581,6 +582,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-bottom: 15px;
 }
 .cate_slide{
+
     padding: 5px;
     color: #242A37;
     white-space: nowrap;
@@ -655,4 +657,78 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     justify-content: center;
     align-items: center;
 }
+.quantity_item{
+    position: fixed;
+    bottom: 70px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    z-index: 2700;
 
+    /* border: 2px solid #A5BECC; */
+}
+.quantity-title{
+    display: flex ;
+    flex-direction: column;
+}
+.quantity_name{
+    font-size: 13px;
+    color: #617C9D;
+}
+.quantity_quantity{
+    font-size: 16px;
+    color: #161531;
+    font-weight: bold;
+   
+}
+.sub_item_list{
+    width: 100%;
+    border-bottom: 1px solid var(--is_main_color);
+    height: 30px;
+    margin-bottom: 10px;
+}
+.sub_item_list_title{
+    width: 30%;
+    background: var(--linear_primary);
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 80%, 75% 0);
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border-radius: 4px 4px 0px 0px !important;
+    font-weight: bold;
+    opacity: 0.8;
+
+}
+.list_of_all{
+    padding: 10px;
+    margin-top: 10px;
+    width: 97%;
+    background-color: white;
+    border-radius: 10px;
+}
+.list_body{
+    width: 100%;
+    padding: 10px;
+}
+.list_body_box{
+    height: 200px;
+    width: 100%;
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+
+}
+.list_body_box_img{
+    
+}

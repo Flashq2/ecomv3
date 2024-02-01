@@ -17,7 +17,7 @@ if(isset($_GET['page'])) $active = $_GET['page'];
             <span>Payment</span>
         </div>
        
-        <div class="footer_item {{$active == 'order' ? 'active' : ''}}" data-url = '{{url('/home?page=home')}}'>
+        <div class="footer_item {{$active == 'product_list' ? 'active' : ''}}" data-url = '{{url('/product_list?page=product_list')}}'>
             <i class="fa-solid fa-layer-group"></i>
             <span>Order</span>
         </div>

@@ -57,6 +57,11 @@
                     </div>
                    
                 </div>
+                <div class="sub_item_list">
+                    <div class="sub_item_list_title">
+                        Promotion 
+                    </div>
+                </div>
                 <div class="row  p-1">
                     @for ($i = 0; $i < 10; $i++)
                      <div class="col-6">
@@ -81,8 +86,88 @@
                         </div>
                      </div>
                      @endfor
+                     
+                </div>
+
+                <div class="sub_item_list">
+                    <div class="sub_item_list_title">
+                        All Product 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sub_detail" style="width: 97%">
+                            <div class="sub_detail_header">
+                                <span class="sub_detail_title_right">Popular Products</span>
+                                <span class="sub_detail_title_left active">SEE ALL <i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            <div class="sub_detail_slide" >
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        @for ($i = 0; $i < 5; $i++)
+                                            <div class="swiper-slide">
+                                                <div class="detail_item_img">
+                                                    <img src="{{ asset('/image/mexican food mexican.jpg') }}" alt="">
+                                                </div>
+                                                <div class="detail_item_title">
+                                                    <div class="item_main_title">
+                                                        Comprehensive Silver Full Body Checkup
+                                                    </div>
+                                                    <div class="detail_item_rate">
+                                                        <div class="rate_image">
+                                                            <img src="{{ asset('/image/top-rated.png') }}" alt="">
+                                                        </div>
+                                                        <div class="rate_icon">
+                                                            <div class="rate_detail">
+                                                                Highest Rate
+                                                            </div>
+                                                            <div class="rate_stare">
+                                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star-half"></i>
+                                                                (6899)
+                                                            </div>
+                                                        </div>
+                                                        <div class="buy_now">
+                                                            <span>Buy now</span> <span class="active">special</span><br>
+                                                            <span class="sub_total">$180</span> <span class="before_price"> $360
+                                                            </span><span class="discount"> 50% Off*</span>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        @endfor
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                <div class="list_of_all">
+                    <div class="sub_detail_header">
+                        <span class="sub_detail_title_right">Popular Products</span>
+                        <span class="sub_detail_title_left active">SEE ALL <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                    <div class="list_body">
+                        
+                    </div>
+                </div>
                 </div>
             </div>
+        </div>
+    </div>
+<br>
+    <div class="quantity_item">
+        <div class="quantity-title">
+            <span class="quantity_name">Total / Packages Added</span>
+            <span class="quantity_quantity">12 <i class="fa-solid fa-cubes-stacked"></i></span>
+        </div>
+
+        <div class="add_button" style="width:29%;">
+            <button class="btn active">Add to Order</button>
         </div>
     </div>
 </div>
