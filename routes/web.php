@@ -2,10 +2,11 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductListController;
 use Illuminate\Support\Facades\Route;
-
+// Route::get('',[PaymentController::class,'calulater']);
 Route::group(['prefix' => 'login'], function () {
      Route::get('',[LoginController::class,'index']);
 });
@@ -20,4 +21,8 @@ Route::group(['prefix' => 'product'], function () {
 
 Route::group(['prefix' => 'product_list'], function () {
      Route::get('',[ProductListController::class,'index']);
+});
+
+Route::group(['prefix' => 'payment'], function () {
+     Route::get('',[PaymentController::class,'index']);
 });

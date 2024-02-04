@@ -12,7 +12,7 @@ if(isset($_GET['page'])) $active = $_GET['page'];
             <i class="fa-solid fa-envelopes-bulk"></i>
             <span>Product</span>
         </div>
-        <div class="footer_item {{$active == 'payment' ? 'active' : ''}}" data-url = '{{url('/home?page=home')}}'>
+        <div class="footer_item {{$active == 'payment' ? 'active' : ''}}" data-url = '{{url('/payment?page=payment')}}'>
             <i class="fa-solid fa-credit-card"></i>
             <span>Payment</span>
         </div>
