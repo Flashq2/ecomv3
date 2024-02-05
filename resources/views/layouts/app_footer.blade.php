@@ -12,12 +12,12 @@ if(isset($_GET['page'])) $active = $_GET['page'];
             <i class="fa-solid fa-envelopes-bulk"></i>
             <span>Product</span>
         </div>
-        <div class="footer_item {{$active == 'payment' ? 'active' : ''}}" data-url = '{{url('/home?page=home')}}'>
+        <div class="footer_item {{$active == 'payment' ? 'active' : ''}}" data-url = '{{url('/payment?page=payment')}}'>
             <i class="fa-solid fa-credit-card"></i>
             <span>Payment</span>
         </div>
        
-        <div class="footer_item {{$active == 'order' ? 'active' : ''}}" data-url = '{{url('/home?page=home')}}'>
+        <div class="footer_item {{$active == 'product_list' ? 'active' : ''}}" data-url = '{{url('/product_list?page=product_list')}}'>
             <i class="fa-solid fa-layer-group"></i>
             <span>Order</span>
         </div>
