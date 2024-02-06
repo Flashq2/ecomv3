@@ -104,7 +104,7 @@
                 <span class="quantity_quantity"> 30 <i class="fa-solid fa-dollar-sign"></i></span>
             </div>
 
-            <div class="add_button" style="width:29%;">
+            <div class="add_button" style="width:32%;">
                 <button class="btn active">Submit Order</button>
             </div>
         </div>
