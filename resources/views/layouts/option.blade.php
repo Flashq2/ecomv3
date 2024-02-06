@@ -313,7 +313,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="submit_order_option pull-right">
                     <button class="btn active">Submit</button>
                 </div>
