@@ -17,6 +17,11 @@
     margin-bottom: 90px !important;
     overflow: hidden;
 }
+.body_padding_with_with{
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
 .login_header{
     font-size: 19px;
     font-weight: 600;
@@ -83,12 +88,17 @@
     margin-top: 10px;
 }
 .control_nva{
-    position: relative;
-    height: 380px;
+    width: 100%;
+    position:fixed;
+    z-index: 10;
+    /* height: 70px; */
+    top: 0;
+    /* margin-bottom: 70px; */
 }
 .control_nva_product{
-    position: relative;
+    position:sticky;
     height: 250px;
+    top: 0;
 }
 .bntSinging{
     font-family: 'Avenir LT Std';
@@ -119,7 +129,7 @@
 .home_screen_nav{
     padding-top: 10px;
     background: var(--linear_primary);
-    height: 250px;
+    height: 70px;
     width: 100%;
     border-radius: 0px 0px 30px 30px;
 
@@ -217,7 +227,7 @@
       object-fit:cover;
     }
 .is_manage_slide{
-    width: 87%;
+    /* width: 87%; */
     height: 200px;
     margin: 0 auto;
     margin-top: 20px;
@@ -251,11 +261,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-weight: 700;
 }
 .box_list{
-    width: 87%;
+    /* width: 87%; */
     /* height: 200px; */
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .box_list .box_header{
     display: flex;
@@ -302,7 +312,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .sub_detail{
     margin-top: 10px !important;
-    width: 87%;
+    /* width: 87%; */
     background-color: #ffff;
     margin: 0 auto;
     padding: 10px;
@@ -660,7 +670,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .quantity_item{
     position: fixed;
-    bottom: 70px;
+    bottom: 0px;
     height: 50px;
     width: 100%;
     padding: 10px;
@@ -803,10 +813,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .order_list{
-    width: 87%;
+    /* width: 87%; */
     /* height: 200px; */
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
     background-color: #ffff;
     border-radius: 10px;
@@ -1083,7 +1093,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 } 
 .status{
-    width: 87%;
+    /* width: 87%; */
     margin: 0 auto;
     margin-top: 20px;
     background-color: #ffff;
@@ -1262,9 +1272,56 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #ff9a9e;
     transition: transform 0.8s ease-out, margin 0.8s ease-out, opacity 0.8s ease-out, border-radius 0.4s ease-out, max-height 0.4s ease-out, max-width 0.4s ease-out;
   }
-  
+  .row_list{
+    border: 1px solid #D1EFFF;
+  }
   /* 
    * To create the animation curve I used this tutorial: http://tobiasahlin.com/blog/curved-path-animations-in-css/ 
    * and modified it to use the idea with transitions. This way, the animation can be used to generate
    * dynamic values for translate with JavaScript (not in this example).
    */
+/* Smartphones start somewhere around here */
+@media (min-width: 300px) {
+}
+
+/* You might do landscape phones here if your content seems to need it */
+@media (min-width: 450px) {
+    .is_manage_slide{
+        height: 300px;
+    }
+}
+
+/* Starting into tablets somewhere in here */
+@media (min-width: 600px) {
+}
+
+/* Perhaps bigger tablets */
+@media (min-width: 750px) {
+}
+
+/* Desktop screen or landscape tablet */
+@media (min-width: 900px) {
+    .mySwiper2 .swiper-slide {
+        width: 270px;
+    }
+}
+
+/* A bit bigger if you need some adjustments around here */
+@media (min-width: 1100px) {
+    .mySwiper2 .swiper-slide {
+        width: 270px;
+    }
+}
+
+/* Widescreens */
+@media (min-width: 1500px) {
+    .is_manage_slide{
+        height: 350px;
+    }
+    .body_padding_with_with{
+        width: 50%;
+    }
+    .mySwiper2 .swiper-slide {
+        width: 270px;
+    }
+}
