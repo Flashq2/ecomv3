@@ -82,4 +82,12 @@ $('.add_button_of_list').on('click', function () {
         });
     }
 });
+
+
+$(document).on('click','#drawer',function(e){
+    $('.drawer').css({'left':'0'});
+})
+// $(document).on('click','body:not(#drawer)',function(e){
+//     $('.drawer').css({'left':'-10000'});
+// })
  
