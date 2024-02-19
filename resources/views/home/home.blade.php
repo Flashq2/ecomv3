@@ -5,8 +5,6 @@
 <?php 
         $arrCate = ['Food' => 'food.png', 'Skin Care' => 'skincare.png', 'Any Product' => 'skincare (1).png', 'Car Station' => 'charging-station.png','Food Station' => 'food.png', 'Car ' => 'car.png'];
         $arrCate = ['Food' => 'thai-food.png', 'Pizza' => 'pizza.png', 'SkinCare' => 'skincare.png', 'Drip' => 'vietnam-drip.png', 'Beer' => 'hop.png', 'Car' => 'car.png'];
-
-
 ?>
     <div id="content_no_padding" class="slimscroll">
         <div class="control_nva">

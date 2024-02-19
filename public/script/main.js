@@ -43,7 +43,6 @@ $(document).on('click','.parent_option ,.cancel',function(e){
 
 })
 
- 
 $('.add_button_of_list').on('click', function () {
     var cart = $('#add_and_link');
     var imgtodrag = $(this).eq(0);
@@ -86,8 +85,27 @@ $('.add_button_of_list').on('click', function () {
 
 $(document).on('click','#drawer',function(e){
     $('.drawer').css({'left':'0'});
+    $('.f-drawer').css({'left':'0'});
 })
-// $(document).on('click','body:not(#drawer)',function(e){
-//     $('.drawer').css({'left':'-10000'});
-// })
+$(document).on('click','.submit_order_option',function(e){
+    $('.option').removeAttr('style'); 
+    setTimeout(function() { 
+        $('.parent_option').css({'height':'0%'});
+        $('.parent_option').css({'width':'0%'});
+        Swal.fire({
+            title: "Success!",
+            text: "Order Submit!",
+            icon: "success"
+          });
+    }, 220);
+})
+
+$(document).on('click','.f-drawer',function(e){
+    $('.drawer').css({'left':'-700px'});
+    $('.f-drawer').css({'left':'-100000px'});
+})
+
+$(document).on('scroll','.row',function(e){
+    alert("Fo"); 
+})
  

@@ -5,6 +5,10 @@
             display: block;
         }
     </style>
+    <?php 
+    $arrCate = ['Food' => 'food.png', 'Skin Care' => 'skincare.png', 'Any Product' => 'skincare (1).png', 'Car Station' => 'charging-station.png','Food Station' => 'food.png', 'Car ' => 'car.png'];
+    $arrCate = ['Food' => 'thai-food.png', 'Pizza' => 'pizza.png', 'SkinCare' => 'skincare.png', 'Drip' => 'vietnam-drip.png', 'Beer' => 'hop.png', 'Car' => 'car.png'];
+?>
 @endsection
 @section('content')
     <div id="content_no_padding" class="slimscroll">
@@ -65,7 +69,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-6 col-12">
+                    <div class="promo_code">
+                        <div class="data">
+                            <div class="radio-item">
+                                <input type="radio" id="ritembs" name="ritems" value="ropt" checked>
+                                <label for="ritems"></label>
+                            </div>
+                            <div class="data_title">$99.00</div>
+                            <div class="shippin_detail" style="float: right;">
+                                + Shipping Fee $10 and 5% Extra MediQem Coin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
                     <div class="promo_code">
                         <div class="data">
                             <div class="radio-item">
@@ -82,26 +100,6 @@
                     
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="promo_code">
-                        <div class="data">
-                            <div class="radio-item">
-                                <input type="radio" id="ritembs" name="ritems" value="ropt" checked>
-                                <label for="ritems"></label>
-                            </div>
-                            <div class="data_title">$99.00</div>
-                            <div class="shippin_detail" style="float: right;">
-                                + Shipping Fee $10 and 5% Extra MediQem Coin
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-
             <div class="row">
                 <div class="col-12">
                     <div class="sub_detail">
@@ -159,13 +157,35 @@
                     </div>
                 </div>
             </div>
+            {{-- <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="box_list">
+                            <div class="box_header">
+                                <span class="heaer_title_right">Popular Categories</span>
+                                <span class="heaer_title_left active">SEE ALL <i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                            
+                            <div class="row no-gutters">
+                                @foreach ($arrCate as $key => $value)
+                                    <div class="col-md-4 col-sm-4 col-4 p-1">
+                                        <div class="box_item">
+                                            <div class="box_img">
+                                                <img src='{{ asset("/image/$value") }}' alt="">
+                                            </div>
+                                            <div class="box_title">
+                                                <span>{{ $key }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                </div>
+            </div>
+            --}}
             </div>
         </div>
-        <div class="row">
-            <div class="drawer">
-
-            </div>
-        </div>
+       @include('layouts.drawer')
     @endsection
 
     @section('script')

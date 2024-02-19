@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('style')
+<style>
+    .body_padding_with_with{
+        margin-top: 140px;
+    }
+</style>
 @endsection
 @section('content')
     <div id="content_no_padding" class="slimscroll">
@@ -10,10 +15,15 @@
             <div class="home_screen_nav">
                 <div class="nav_detail">
                     <div class="nan_user_info">
-                        <i class="fa-regular fa-circle-user"></i><span>blue Technology</span>
+                        <div class="image">
+                            <img src="{{asset('image/logo.png')}}" alt="">
+                        </div>
+                        <div class="title">
+                            <span>blue Technology</span><br>
+                        </div>
                     </div>
                     <div class="nav_cart"><a href="{{url('/product')}}"> <i class="fa-brands fa-opencart"></i></a>
-                       
+                        
                     </div>
                     
                 </div>
@@ -21,16 +31,37 @@
                     
                  </div>
             </div>
-             
+            <div class="row">
+                <div class="control_menu_slide">
+                    <div class="cate_slide cs1">
+                        Best Sellers
+                    </div>
+                    <div class="cate_slide is_active cs2">
+                        Pizza Company
+                    </div>
+                    <div class="cate_slide cs3">
+                        Blue Laralser
+                    </div>
+                    <div class="cate_slide cs4">
+                        Mbral isSta
+                    </div>
+                    <div class="cate_slide cs5">
+                        Best Sellers
+                    </div>
+                    <div class="cate_slide cs6">
+                        Best Sellers
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="body_padding_with_with">
             <div class="row">
                 <div class="col-12">
                     <div class="box_list">
                         <div class="box_header">
-                            <span class="heaer_title_right">Recommended recipes</span>
+                            {{-- <span class="heaer_title_right">Recommended recipes</span> --}}
                         </div>
-                        <div class="row">
+                        {{-- <div class="row">
                             <div class="control_menu_slide">
                                 <div class="cate_slide">
                                     Best Sellers
@@ -51,15 +82,14 @@
                                     Best Sellers
                                 </div>
                             </div>
-    
-                        </div>
-                        <div class="sub_item_list">
+                        </div> --}}
+                        {{-- <div class="sub_item_list">
                             <div class="sub_item_list_title">
                                 Promotion
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="row  p-1">
-                            @for ($i = 0; $i < 12; $i++)
+                            @for ($i = 0; $i < 20; $i++)
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product_box">
                                         <div class="block_image">
@@ -87,12 +117,12 @@
     
                         </div>
     
-                        <div class="sub_item_list">
+                        {{-- <div class="sub_item_list">
                             <div class="sub_item_list_title">
                                 All Product
                             </div>
-                        </div>
-                        <div class="list_of_all">
+                        </div> --}}
+                        {{-- <div class="list_of_all">
                             <div class="sub_detail_header">
                                 <span class="sub_detail_title_right">Popular Products</span>
                                 <span class="sub_detail_title_left active">SEE ALL <i
@@ -133,7 +163,7 @@
                                     </div>
                                 </div>
                                 @endfor
-                        </div>
+                        </div> --}}
                         </div>
                     </div>
                 </div>
