@@ -2,7 +2,7 @@
 @section('style')
 <style>
     .body_padding_with_with{
-        margin-top: 140px;
+        margin-top: 200px;
     }
 </style>
 @endsection
@@ -13,20 +13,26 @@
         ?>
         <div class="control_nva">
             <div class="home_screen_nav">
-                <div class="nav_detail">
-                    <div class="nan_user_info">
+                <div class="header_box">
+                    <div class="company_detial">
                         <div class="image">
-                            <img src="{{asset('image/logo.png')}}" alt="">
+                            <img src="{{asset('image/blue.png')}}" alt="">
                         </div>
                         <div class="title">
-                            <span>blue Technology</span><br>
+                            <span>blue Technology</span>
+                            <span>ប្លូតិចណូ​​ ឡូជី</span>
+                            <span class="more_info active">More Info</span>
                         </div>
                     </div>
-                    <div class="nav_cart"><a href="{{url('/product')}}"> <i class="fa-brands fa-opencart"></i></a>
-                        
+                    <div class="toast_list_box">
+                        <a href="/product_detail">
+                        <div class="toast_list_box_title">
+                          <i class="fa-solid fa-file-invoice"></i>  &nbsp;Order Detail
+                        </div>
+                    </a> 
                     </div>
-                    
                 </div>
+                 
                 <div class="company_info">
                     
                  </div>
@@ -34,13 +40,13 @@
             <div class="row">
                 <div class="control_menu_slide">
                     <div class="cate_slide cs1">
-                        Best Sellers
+                        Pizza Compay
                     </div>
                     <div class="cate_slide is_active cs2">
-                        Pizza Company
+                       Cola Cola
                     </div>
                     <div class="cate_slide cs3">
-                        Blue Laralser
+                        World Dining Boeung Snor
                     </div>
                     <div class="cate_slide cs4">
                         Mbral isSta
@@ -61,33 +67,7 @@
                         <div class="box_header">
                             {{-- <span class="heaer_title_right">Recommended recipes</span> --}}
                         </div>
-                        {{-- <div class="row">
-                            <div class="control_menu_slide">
-                                <div class="cate_slide">
-                                    Best Sellers
-                                </div>
-                                <div class="cate_slide is_active">
-                                    Pizza Company
-                                </div>
-                                <div class="cate_slide">
-                                    Blue Laralser
-                                </div>
-                                <div class="cate_slide">
-                                    Mbral isSta
-                                </div>
-                                <div class="cate_slide">
-                                    Best Sellers
-                                </div>
-                                <div class="cate_slide">
-                                    Best Sellers
-                                </div>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="sub_item_list">
-                            <div class="sub_item_list_title">
-                                Promotion
-                            </div>
-                        </div> --}}
+                      
                         <div class="row  p-1">
                             @for ($i = 0; $i < 20; $i++)
                                 <div class="col-lg-3 col-md-4 col-6">
@@ -181,6 +161,7 @@
             <button class="btn active">Add to Order</button>
         </div>
     </div>
+    @include('layouts.drawer')
     @include('layouts.option')
 @endsection
 

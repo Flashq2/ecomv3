@@ -143,15 +143,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="add_button pull-right" style="width:200px;margin-top:10px;float:right" id="add_and_link">
+                            <button class="btn active ">Submit</button>
+                        </div>
+                    </div>
             </div>
 
         </div>
-        <div class="row">
-            <div class="drawer">
-                
-            </div>
-        </div>
-
+        @include('layouts.drawer')
+      
     </div>
 @endsection
 @section('script')

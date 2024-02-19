@@ -141,9 +141,54 @@
 .home_screen_nav {
     padding-top: 10px;
     background: var(--linear_primary);
-    height: 70px;
+    height: 130px;
     width: 100%;
     border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_screen_nav .header_box{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.home_screen_nav .company_detial{
+    width: 70%;
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+}
+.home_screen_nav .header_box .image{
+     width: 80px;
+     height: 80px;
+     overflow: hidden;
+     /* border: 1px solid black; */
+}
+.home_screen_nav .header_box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.home_screen_nav .header_box .title{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;
+    font-weight: 700 !important;
+    font-family: "Avenir LT Std";
+    color: #161531;
+}
+.more_info{
+    font-size: 12px;
+    text-decoration: underline;
 }
 .nav_detail {
     margin: 0 auto;
@@ -1449,6 +1494,25 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     padding-right: 10px;
     padding-left: 6px;
 }
+
+.toast_list_box {
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 10px;
+}
+.toast_list_box .toast_list_box_title {
+    display: flex;
+    align-items: center;
+    background-color: var(--is_main_color);
+    font-size: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
 .sumary_user_info .box .box_content .box_content_header {
     width: 100%;
     padding: 4px;
@@ -1835,16 +1899,33 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #617c9d;
     margin-left: 10px;
 }
+.nan_user_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .nan_user_info img {
     object-fit: contain;
     width: 100px;
     height: 100px;
+    margin-right: 20px;
+    
+}
+.nan_user_info .title{
+    color: #161531;
+    font-family: "Avenir LT Std";
+    font-weight: bold;
+    font-size: 12px;
 }
 .drawer_header{
     width: 100%;
-    background-color: #7291a175;
+    background: linear-gradient(
+        0deg,
+        rgb(246 101 254 / 41%) 0%,
+        rgb(178 115 254 / 74%) 100%
+    );
     padding: 10px;
-    border-bottom: 2px solid #5a91ac75;
+    /* border-bottom: 2px solid #5a91ac75; */
     }
 .drawer_header .drawer_header_image{
     width: 80px;
@@ -1860,7 +1941,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
    object-fit: contain;
 }
 .drawer_header_name{
-    color: #617c9d;
+    color: #3e8eef;
     font-weight: bold !important;
     font-family: "Avenir LT Std";
     font-size: 24px;
@@ -1969,13 +2050,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .user_detail {
         width: 50%;
     }
+   
     .control_menu_slide {
         width: 50%;
+    }
+    .home_screen_nav .header_box {
+        width: 50% !important;
     }
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 1px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -1984,7 +2069,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--is_main_color);
+    /* background: var(--is_main_color); */
 }
 
 /* Handle on hover */

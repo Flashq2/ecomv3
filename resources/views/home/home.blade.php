@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('style')
+<style>
+    .body_padding_with_with{
+        margin-top: 200px;
+    }
+</style>
 @endsection
 @section('content')
 <?php 
@@ -9,14 +14,24 @@
     <div id="content_no_padding" class="slimscroll">
         <div class="control_nva">
             <div class="home_screen_nav">
-                <div class="nav_detail">
-                    <div class="nan_user_info">
-                        <i class="fa-regular fa-circle-user"></i><span>blue Technology</span>
+                <div class="header_box">
+                    <div class="company_detial">
+                        <div class="image">
+                            <img src="{{asset('image/blue.png')}}" alt="">
+                        </div>
+                        <div class="title">
+                            <span>blue Technology</span>
+                            <span>ប្លូតិចណូ​​ ឡូជី</span>
+                            <span class="more_info active">More Info</span>
+                        </div>
                     </div>
-                    <div class="nav_cart"><a href="{{url('/product')}}"> <i class="fa-brands fa-opencart"></i></a>
-                       
+                    <div class="toast_list_box">
+                        <a href="/product_detail">
+                        <div class="toast_list_box_title">
+                          <i class="fa-solid fa-file-invoice"></i>  &nbsp;Order Detail
+                        </div>
+                    </a> 
                     </div>
-                    
                 </div>
                 <div class="company_info">
                     
@@ -249,7 +264,7 @@
 
     </div>
 
-  @include('layouts.app_footer')
+  {{-- @include('layouts.app_footer') --}}
 @endsection
 
 @section('script')
